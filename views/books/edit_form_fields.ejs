@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="row">
+        <div class="offset-md-2 col-md-8">
+
+            <form class="form">
+
+                <div class="form-group">
+                    <label for="nameTextField">Book Title</label>
+                    <input type="text" class="form-control"
+                        id="nameTextField"
+                        placeholder="Enter the Book Title"
+                        name="name" 
+                        value = "<%= book.Title %>"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descriptionTextField">Description</label>
+                    <textarea type="text" class="form-control"
+                        id="descriptionTextField"
+                        placeholder="Enter the Description of the Book"
+                        name="description" 
+                        required><%= book.Description %></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="authorTextField">Price</label>
+                    <input type="text" class="form-control"
+                        id="authorTextField"
+                        placeholder="Enter the Price of the Book"
+                        name="author" 
+                        value = "<%= book.Price %>"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField">Author</label>
+                    <input type="text" class="form-control"
+                        id="publishedTextField"
+                        placeholder="Enter the Author of the Book"
+                        name="published" 
+                        value = "<%= book.Author %>"
+                        required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="priceTextField">Genre</label>
+                    <input type="text" class="form-control"
+                        id="priceTextField"
+                        placeholder="Enter the Book's Genre"
+                        name="price" 
+                        value = "<%= book.Genre %>"
+                        required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Edit
+                </button>
+
+                <a href="/books" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> Cancel
+                </a>
+            </form>
+        </div>
+
+    </div>
+
+</div>
