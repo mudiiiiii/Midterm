@@ -31,9 +31,13 @@
     </div>
 </nav>
 <h2>New Book</h2>
-<form action="/books" method="POST" enctype="multipart/form-data">
+<div class="container">
+  <div class="row">
+      <div class="offset-md-2 col-md-8">
+<form class="form" method="post" >
   <%- include('_form_fields') %>
 </form>
+</div><div></div>
 <footer class="bg-dark footer-section">
   <div class="section">
     <div class="container">
